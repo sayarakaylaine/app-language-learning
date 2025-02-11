@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 const LoginScreen = ({ navigation }) => {
@@ -6,7 +6,8 @@ const LoginScreen = ({ navigation }) => {
 
   const handleLogin = () => {
     if (username) {
-      navigation.navigate('Home');
+      // Passando o nome do usuário para a HomeScreen
+      navigation.navigate('Home', { username });
     }
   };
 

@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import QuizScreen from './screens/QuizScreen';
 import LoginScreen from './screens/LoginScreen';
+import AchievementsScreen from './screens/AchievementsScreen';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ function App() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Quiz" component={QuizScreen} />
+        <Stack.Screen name="Conquistas" component={AchievementsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
